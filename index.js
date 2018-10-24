@@ -5,7 +5,7 @@ const remap = require("./remap");
 
 const app = express();
 
-app.get("/", function(req, res) {
+app.get("/:locationId", function(req, res) {
   res.set({
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
@@ -17,7 +17,7 @@ app.get("/", function(req, res) {
     headers: {
       "Content-Type": "application/json; charset=utf-8"
     },
-    body: JSON.stringify({ param: "data", db: "Dallas" })
+    body: JSON.stringify({ param: "data", db: req.params.locationId })
   })
     .then(response => response.json())
     .then(json => {

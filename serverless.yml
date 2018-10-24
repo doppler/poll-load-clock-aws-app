@@ -63,9 +63,13 @@ functions:
       # - http: ANY /
       # - http: 'ANY {proxy+}'
       - http:
-          path: /
+          path: /{locationId}
           method: get
           cors: true
+          request:
+            parameters:
+              paths:
+                locationId: true
   # hello:
     # handler: handler.hello
 
