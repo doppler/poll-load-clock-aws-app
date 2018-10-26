@@ -98,7 +98,7 @@ module.exports = data => {
       enabled: tm1_enabled.toLowerCase() === "true",
       load: tm1_load,
       time: tm1_timer,
-      slots: tm1_slots,
+      slots: Number(tm1_slots),
       backgroundColor: tm1_backgroundColor,
       foregroundColor: tm1_foregroundColor
     },
@@ -106,7 +106,7 @@ module.exports = data => {
       enabled: tm2_enabled.toLowerCase() === "true",
       load: tm2_load,
       time: tm2_timer,
-      slots: tm2_slots,
+      slots: Number(tm2_slots),
       backgroundColor: tm2_backgroundColor,
       foregroundColor: tm2_foregroundColor
     },
@@ -114,7 +114,7 @@ module.exports = data => {
       enabled: tm3_enabled.toLowerCase() === "true",
       load: tm3_load,
       time: tm3_timer,
-      slots: tm3_slots,
+      slots: Number(tm3_slots),
       backgroundColor: tm3_backgroundColor,
       foregroundColor: tm3_foregroundColor
     },
@@ -122,7 +122,7 @@ module.exports = data => {
       enabled: tm4_enabled.toLowerCase() === "true",
       load: tm4_load,
       time: tm4_timer,
-      slots: tm4_slots,
+      slots: Number(tm4_slots),
       backgroundColor: tm4_backgroundColor,
       foregroundColor: tm4_foregroundColor
     }
